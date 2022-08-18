@@ -17,6 +17,7 @@
         <meta property="og:url" content="https://gm20books.carrd.co"/>
         <meta property="twitter:card" content="summary_large_image"/>
         <link rel="canonical" href="https://gm20books.carrd.co"/>
+        <link rel="icon" href="https://cdn.discordapp.com/attachments/1002284165850468355/1009829801919524864/27C97ED9-8D6E-4728-809E-31A186940445.jpg">
         <link href="https://fonts.googleapis.com/css?display=swap&family=Ubuntu:400,400italic,700,700italic%7CManrope:600,600italic" rel="stylesheet" type="text/css"/>
         <style>
             html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
@@ -126,7 +127,7 @@
                 opacity: 1;
                 visibility: visible;
             }
-
+            
             :root {
                 --background-height: 100vh;
                 --site-language-alignment: left;
@@ -562,6 +563,126 @@
                 background-color: #00ff00;
             }
 
+            @media (max-width: 1024px){
+                .area{
+                    background: #4e54c8;  
+                    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+                    width: 100%;
+                    height:100%;
+            }
+                .circles{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                }
+
+                .circles li{
+                    position: absolute;
+                    display: block;
+                    list-style: none;
+                    width: 20px;
+                    height: 20px;
+                    background: rgba(255, 255, 255, 0.2);
+                    animation: animate 25s linear infinite;
+                    bottom: -150px;
+                    
+                }
+
+                .circles li:nth-child(1){
+                    left: 25%;
+                    width: 80px;
+                    height: 80px;
+                    animation-delay: 0s;
+                }
+
+                .circles li:nth-child(2){
+                    left: 10%;
+                    width: 20px;
+                    height: 20px;
+                    animation-delay: 2s;
+                    animation-duration: 12s;
+                }
+
+                .circles li:nth-child(3){
+                    left: 70%;
+                    width: 20px;
+                    height: 20px;
+                    animation-delay: 4s;
+                }
+
+                .circles li:nth-child(4){
+                    left: 40%;
+                    width: 60px;
+                    height: 60px;
+                    animation-delay: 10s;
+                    animation-duration: 18s;
+                }
+
+                .circles li:nth-child(5){
+                    left: 65%;
+                    width: 20px;
+                    height: 20px;
+                    animation-delay: 10s;
+                }
+
+                .circles li:nth-child(6){
+                    left: 75%;
+                    width: 110px;
+                    height: 110px;
+                    animation-delay: 3s;
+                }
+
+                .circles li:nth-child(7){
+                    left: 35%;
+                    width: 150px;
+                    height: 150px;
+                    animation-delay: 7s;
+                }
+
+                .circles li:nth-child(8){
+                    left: 50%;
+                    width: 25px;
+                    height: 25px;
+                    animation-delay: 15s;
+                    animation-duration: 45s;
+                }
+
+                .circles li:nth-child(9){
+                    left: 20%;
+                    width: 15px;
+                    height: 15px;
+                    animation-delay: 2s;
+                    animation-duration: 35s;
+                }
+
+                .circles li:nth-child(10){
+                    left: 85%;
+                    width: 150px;
+                    height: 150px;
+                    animation-delay: 0s;
+                    animation-duration: 11s;
+                }
+            }
+
+        
+            @keyframes animate {
+
+                0%{
+                    transform: translateY(0) rotate(0deg);
+                    opacity: 1;
+                    border-radius: 0;
+                }
+
+                100%{
+                    transform: translateY(-1000px) rotate(720deg);
+                    opacity: 0;
+                    border-radius: 50%;
+                }
+
+            }
 
             .icc-credits {
                 display: block;
@@ -646,7 +767,7 @@
                 color: rgba(232,232,232,0.498);
                 margin-top: 1.375rem !important;
             }
-
+            
             @media (max-width: 1920px) {
             }
 
@@ -818,6 +939,20 @@
         </svg>
         <div id="wrapper">
             <div id="main">
+                <div class="area" >
+                    <ul class="circles">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                    </ul>
+                </div>
                 <div class="inner">
                     <div id="image01" class="style1 image">
                         <span class="frame">
