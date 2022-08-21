@@ -696,11 +696,12 @@
             }
 
             .icc-credits span {
-                border-radius: 24px;
+                background-image: linear-gradient(30deg, #A464A1 15%, #3B5DAD 85%);
+                border-radius: 40px;
                 cursor: pointer;
                 display: inline-block;
                 font-family: Arial, sans-serif;
-                font-size: 12px;
+                font-size: 28px;
                 letter-spacing: 0;
                 line-height: 1;
                 position: relative;
@@ -718,6 +719,7 @@
             }
 
             .icc-credits span a:before {
+                background-image: linear-gradient(30deg, #A464A1 15%, #3B5DAD 85%);
                 content: '( ';
                 opacity: 1;
                 transition: opacity 0.25s ease;
@@ -733,7 +735,6 @@
                 background-image: linear-gradient(30deg, #A464A1 15%, #3B5DAD 85%);
                 border-radius: inherit;
                 box-shadow: 0 0.25em 1.25em 0 rgba(0,0,0,0.25);
-                content: '';
                 display: block;
                 height: calc(100% + 2px);
                 left: -1px;
@@ -745,31 +746,17 @@
                 width: calc(100% + 2px);
             }
 
-            .icc-credits span:hover {
-                text-transform: none !important;
-            }
-
-            .icc-credits span:hover a {
-                color: #ffffff !important;
-                transform: scale(1.1) translateY(-0.05rem);
-            }
-
-            .icc-credits span:hover a:before {
-                opacity: 0;
-            }
-
-            .icc-credits span:hover a:after {
-                opacity: 0;
-            }
-
-            .icc-credits span:hover::after {
-                opacity: 1;
-                transform: scale(1.1) translateY(-0.05rem);
-            }
-
-            #credits span {
-                color: rgba(232,232,232,0.498);
-                margin-top: 1.375rem !important;
+            #Ihateit{
+                background-image: linear-gradient(30deg, #A464A1 15%, #3B5DAD 85%);
+                border-radius: 80px;
+                display: inline-block;
+                font-family: Arial, sans-serif;
+                font-size: 18px;
+                color: #FFFFFF;
+                letter-spacing: 0;
+                line-height: 1;
+                position: relative;
+                text-decoration: none;
             }
             
             @media (max-width: 1920px) {
@@ -982,7 +969,7 @@
                     </ul>
                     <ul id="buttons09" class="style1 buttons">
                         <li>
-                            <a href="https://forms.gle/2woPTPZ1gqbhzHHZA" class="button n01">
+                            <a href="#" class="button n01">
                                 <svg>
                                     <use xlink:href="#icon-be2"></use>
                                 </svg>
@@ -1061,10 +1048,18 @@
                         </li>
                     </ul>
                     <hr id="divider01" class="style1">
+                    <span id= "Ihateit"></span>
                 </div>
             </div>
         </div>
         <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+        <script>
+            let count = parseInt(localStorage.getItem('visitorCounter') || '0');
+            count++;
+            localStorage.setItem('visitorCounter', count);
+            let visitorsStyle = document.getElementById('Ihateit');
+            visitorsStyle.textContent = `Visited ${count} times`;
+          </script>
         <script>
             (function() {
                 var on = addEventListener
